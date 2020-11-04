@@ -35,7 +35,8 @@ public class GetController {
     // 스프링 부트에서는 Json으로 자동으로 출력해줌 프로퍼티이름 맞춰주면 알아서 set해줌
     public MultiParam getMultiPara(MultiParam multiParam){
         System.out.println("id: "+multiParam.getId()+", name: "+multiParam.getName()
-                +", email: "+multiParam.getEmail()+", age: "+multiParam.getAge());
+                +", email: "+multiParam.getEmail());
+        System.out.println("age: "+ multiParam.getAge());
         return multiParam;
     }
 }
